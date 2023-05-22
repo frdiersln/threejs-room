@@ -17,8 +17,8 @@ loader.load( 'statics/Another_bedroom.glb', function ( gltf ) {
 	console.error( error );
 } ); 
 
-camera.position.set(5,5,-5);
-camera.lookAt(0,0,0);
+camera.position.set(5,5,-5); // cam position x=5, y=5, z=-5
+camera.lookAt(0,0,0); // cam focus at orjin (our 3d model rendered on orjin)
 
 function animate() {
 	requestAnimationFrame( animate );
