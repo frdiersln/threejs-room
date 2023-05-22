@@ -36,7 +36,7 @@ function animate() {
 
 	requestAnimationFrame( animate );
 	
-	camera.lookAt(-mouse.x/2, -mouse.y/2, 0.22)
+	camera.lookAt(-mouse.x/2, mouse.y/2, 0.22)
 	//reposition cam on scroll
 	camera.position.setX(5 - getScrollPercent() / 22);
 	camera.position.setY(5 - getScrollPercent() / 54);
